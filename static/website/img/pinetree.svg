@@ -1,0 +1,9 @@
+<svg class="gem__icon-leaf" xmlns="http://www.w3.org/2000/svg" width="80" height="54" viewBox="0 0 79.4 53.9">
+							<g fill="none" stroke="#1D1D1F" stroke-width="3" stroke-miterlimit="10">
+								<polyline class="leaf-left" points="40.7,3.5 29.2,14.7 34.2,19.2 24.2,28.9 39.7,42.8"></polyline>
+								<polyline class="leaf-right" points="38.7,43.9 55.2,28.9 45.1,19.2 50.2,14.7 39.7,4.6"></polyline>
+								<line class="stem-right" x1="39.7" y1="32.8" x2="45.2" y2="27.9"></line>
+								<line class="stem-left" x1="39.7" y1="32.8" x2="34.1" y2="27.9"></line>
+								<line class="stem" x1="39.7" y1="22.8" x2="39.7" y2="50.8"></line>
+							</g>
+						</svg>

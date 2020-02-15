@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800);
+
+body,
+html {
+    width: 100%;
+    overflow-x: hidden
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Open Sans, "sans-serif"
+}
+
+@media(max-width:700px){
+    h2 {
+        font-weight: 700;
+        font-family: Open Sans;
+        letter-spacing: 2px;
+        text-align: center;
+        font-size: 25px;
+        text-transform: uppercase
+    }
+    .gimg{
+        width:100%;
+        margin: 3px;
+        margin-bottom: 10px;
+        text-align:center;
+    }
+    #gallery img{
+        width: 100%;
+        cursor: pointer;
+    }
+
+    #big_container {
+        display: none;
+    }
+}
+
+@media(min-width:700px){
+    h2 {
+        font-weight: 700;
+        font-family: Open Sans;
+        letter-spacing: 2px;
+        text-align: center;
+        font-size: 30px;
+        text-transform: uppercase
+    }
+    #gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .gimg{
+        flex-basis: 300px;
+        margin: 3px;
+    }
+    #gallery img{
+        width: 100%;
+        cursor: pointer;
+    }
+    #big_container {
+        z-index: 1002;
+        position: fixed;
+        top: -100vh;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0,0,0,0.5);
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #big_container>div {
+        position: relative;
+    }
+    #big_img{
+        transition: all .3s ease;
+        height: 0;
+    }
+    #bcloseBtn {
+        background: white;
+        border: 2px solid red;
+        width: 30px;
+        height: 30px;
+        font-weight: bold;
+        border-radius: 50%;
+        position: absolute;
+        top: -15px;
+        left: -15px;
+        outline: none;
+    }
+    #toggles {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #toggles button {
+        border: none;
+        background: transparent;
+        font-size: 30px;
+        margin:10px;
+        color: black;
+        font-weight: bold;
+        text-shadow:0 0px 10px white;
+        transition: all .3s ease;
+        outline: none;
+    }
+    #toggles button:hover{
+        text-shadow: 0 0 25px white;
+    }
+}
+
+hr {
+    width: 100px;
+    border: 2px solid #000;
+    margin: 10px auto 40px;
+    background: #000
+}
+
+i {
+    cursor: pointer;
+}

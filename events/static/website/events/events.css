@@ -1,0 +1,160 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800);
+
+body,
+html {
+    width: 100%;
+    overflow-x: hidden
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Open Sans, "sans-serif"
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+@media (max-width:700px) {
+    #articles article {
+        padding: 10px;
+        box-sizing: border-box;
+        text-align: justify
+    }
+
+    .article-layout h2 {
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .article-layout .center_btn {
+        text-align: center;
+    }
+
+    /* grid article layout */
+    .article-layout {
+        display: grid;
+        grid-template-rows: auto auto;
+    }
+
+    .article-layout .img {
+        text-align: center;
+        margin-bottom: 20px;
+        grid-row: 1/2;
+    }
+
+    .article-layout .text {
+        grid-row: 2/3;
+    }
+
+    /* diagonal stuff */
+    #articles .reverse-layout {
+        background: #ddd
+    }
+    svg {
+        fill: #ddd;
+        height: 75px;
+        width: 100%
+    }
+    .right-grey {
+        background: #ddd
+    }
+    .right-grey svg {
+        background: #fff
+    }
+    .right-white svg {
+        background: #ddd;
+        fill: #fff
+    }
+    .register_btn{
+        margin: auto;
+    }
+}
+
+@media (min-width:700px) {
+    #articles article .article-layout {
+        margin: auto;
+        display: block;
+        max-width: 1000px;
+        display: flex;
+        justify-content: center
+    }
+    #articles article .text {
+        padding: 30px
+    }
+    #articles article .img,
+    #articles article .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center
+    }
+    #articles article h2 {
+        letter-spacing: 2px;
+        font-weight: 700;
+        font-size: 40px;
+        text-align: right;
+        margin-bottom: 1em
+    }
+    #articles article p {
+        border-right: 5px solid #000;
+        padding: 0 20px;
+        text-align: justify;
+        font-size: 18px
+    }
+
+    #articles .reverse-layout {
+        background: #ddd
+    }
+    #articles .reverse-layout>div {
+        flex-direction: row-reverse
+    }
+    #articles .reverse-layout p {
+        border-right: none;
+        border-left: 5px solid #000
+    }
+    #articles .reverse-layout h2 {
+        text-align: left
+    }
+    svg {
+        fill: #ddd;
+        height: 150px;
+        width: 100%
+    }
+    .right-grey {
+        background: #ddd
+    }
+    .right-grey svg {
+        background: #fff
+    }
+    .right-white svg {
+        background: #ddd;
+        fill: #fff
+    }
+    .reverse-layout .center_btn{
+        text-align: left;
+    }
+    .center_btn{
+        text-align: right;
+    }
+    .register_btn{
+        margin-left: auto;
+    }
+}
+
+.register_btn {
+    background: transparent;
+    border: 2px solid black;
+    padding: 8px 12px;
+    outline: none;
+    width: 150px;
+    transition: all .5s ease;
+}
+
+.register_btn:focus {
+    outline: none;
+}
+
+article a:hover {
+    color: black !important;
+}

@@ -1,0 +1,7 @@
+<svg class="gem__icon-wind" xmlns="http://www.w3.org/2000/svg" width="80" height="54" viewBox="0 0 79.4 53.9">
+							<g fill="none" stroke="#1D1D1F" stroke-width="3" stroke-miterlimit="10">
+								<path class="wind-1" d="M57.6,24.3c-0.6-1.2-1-2.6-1-4.1c0-5,4-9,9-9c5,0,9,4,9,9s-4,9-9,9l-61.1,0"></path>
+								<path class="wind-2" d="M42.2,17.4c0-2.7,2.2-4.9,4.9-4.9c2.7,0,4.9,2.2,4.9,4.9s-2.2,4.9-4.9,4.9H9.6"></path>
+								<path class="wind-3" d="M57.9,41.3c0.6,1.2,1.7,2,3.1,2c1.9,0,3.5-1.6,3.5-3.5s-1.6-3.5-3.5-3.5l-46.4,0"></path>
+							</g>
+						</svg>

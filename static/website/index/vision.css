@@ -1,0 +1,63 @@
+@media (max-width:700px) {
+    #vision {
+        width: 100%;
+        padding: 30px;
+        background: #ddd
+    }
+    #vision h2 {
+        text-align: center;
+        font-weight: 700;
+        letter-spacing: 5px
+    }
+    #vision hr {
+        width: 100px;
+        border: 2px solid #000;
+        margin: 20px auto;
+        background: #000
+    }
+    #vision p {
+        text-align: justify;
+        font-size: 17px;
+        font-family: sans-serif
+    }
+    svg {
+        transform: translateY(6px);
+        fill: #ddd;
+        height: 50px;
+        width: 100%
+    }
+    .left-grey {
+        background: #ddd
+    }
+    .left-grey svg {
+        fill: #fff
+    }
+}
+
+@media (min-width:700px) {
+    #vision {
+        margin-top: 80px;
+        width: 700px;
+        padding: 50px;
+        border: 5px solid #000
+    }
+    #vision h2 {
+        text-align: center;
+        font-weight: 700;
+        letter-spacing: 2px
+    }
+    #vision hr {
+        width: 100px;
+        border: 2px solid #000;
+        margin: 20px auto;
+        background: #000
+    }
+    #vision p {
+        text-align: justify;
+        font-size: 18px
+    }
+    .left-grey,
+    .right-grey {
+        display: none
+    }
+}

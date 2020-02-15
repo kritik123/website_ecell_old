@@ -1,0 +1,90 @@
+#contact input,
+#contact textarea {
+    border: 2px solid black;
+    padding: 10px;
+    outline: none;
+    display: block;
+    width: 400px;
+    color: black;
+    margin: 6px auto !important;
+    box-sizing: border-box;
+}
+
+#submit_btn{
+    width: 150px;
+    color: white;
+    background: #000;
+    padding: 15px;
+    border: 0;
+    transition: all 1s ease !important;
+}
+
+#submit_btn i {
+    color: white !important;
+    margin: 0 !important;
+}
+
+#submit_btn:focus {
+    outline: none;
+}
+
+@media (max-width:700px) {
+    #contact {
+        text-align: center;
+        width: 95%;
+    }
+    #contact h2 {
+        font-weight: 700;
+        letter-spacing: 5px;
+        margin-bottom: 20px
+    }
+    #contact h3 {
+        font-size: 20px;
+        font-weight: 700;
+        margin: 30px;
+        text-decoration: underline
+    }
+    #contact hr {
+        width: 100px;
+        border: 2px solid #000;
+        margin: 10px auto 60px;
+        background: #000
+    }
+    #contact i {
+        color: #000;
+        margin: 20px 10px
+    }
+    
+    #contact input,
+    #contact textarea {
+        width: 100%;
+    }
+}
+
+@media (min-width:700px) {
+    #contact {
+        text-align: center;
+        margin-top: 80px
+    }
+    #contact h2 {
+        font-weight: 700;
+        letter-spacing: 2px;
+        margin-bottom: 20px
+    }
+    #contact h3 {
+        font-size: 20px;
+        font-weight: 700;
+        margin: 30px;
+        text-decoration: underline
+    }
+    #contact hr {
+        width: 100px;
+        border: 2px solid #000;
+        margin: 10px auto 60px;
+        background: #000
+    }
+    #contact i {
+        color: #000;
+        margin: 20px 30px
+    }
+}

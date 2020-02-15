@@ -1,0 +1,76 @@
+body {
+    background: #18181c;
+    color: #18181c;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+.loader {
+    background: #18181c;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease;
+    z-index: 100;
+}
+
+#logo {
+    transition: fill 1s ease;
+    fill: yellowgreen;
+    /* stroke: rgb(153, 255, 0); */
+    stroke: black !important;
+    stroke-width: 3;
+}
+
+.loader svg {
+    /* margin-top: 30px; */
+    /* width: 95%; */
+    display: none;
+    margin-top: 5vh;
+    height: 95vh;
+}
+
+text {
+    opacity: 0;
+    transition: opacity .5s;
+    fill: white;
+}
+
+path,
+rect {
+    stroke: white;
+}
+
+circle {
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+#menubar {
+    display: none;
+}
+
+.no_draw {
+    stroke-dasharray: 0 !important;
+}
+
+@media(max-width: 700px){
+    .loader {
+        width: 100vw;
+        overflow: hidden;      
+    }
+    .loader svg {
+        height: 100vh;
+        width:1200px;
+        position: absolute;
+        left: -600px;
+        top: 0;
+        transform: translateX(50vw);
+    }
+}
